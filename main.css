@@ -19,7 +19,7 @@
   --yellow-color: #FAD744;
 }
 
-
+/* ==== Universal ==== */
 
 body {
   /*background-color: var(--bg-grey);*/
@@ -37,8 +37,6 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
-
-/* body sections */
   
 section {
   display: flex;
@@ -113,9 +111,7 @@ section {
 
 /*===== contact =====*/
 
-#contact li {
-  font-size: 1.6rem;
-}
+
 
 /*  
 =================
@@ -130,57 +126,31 @@ larger screen devices
     justify-content: space-between;
   }
 
+  .logo {
+    font-size: 5rem;
+    font-weight: 200;
+    /*text-shadow: 1px 1px var(--red-color);*/
+    padding: 10px 0 0 0;
+    margin-left: 15px;
+  }
+
   #nav-bar ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-size: 1.2rem;
-    padding: .8rem 0;
-    margin-right: 10px;
+    font-size: 1.4rem;
+    margin-right: 15px;
     width: 40vw;
   }
 
-  #nav-bar ul:last-child {
-    border-bottom: none;
+  #nav-bar ul li {
+    border-bottom: 2px solid var(--red-color);
+    padding: 2px 0;
   }
 
-  section {
-    padding-top: 7rem;
+  #nav-bar ul li:last-child {
+    border-bottom: 2px solid var(--red-color);
   }
-
-  #welcome {
-    padding-top: 11rem;
-  }
-
-  #co-info  {
-   display: flex;
-   flex-direction:row;
-   justify-content: space-between;
-  }
-
-  #co-info > div {
-    margin: 25px;
-    text-align: justify;
-    max-width: 400px;
-  }
-
-  #co-info > div p,
-  #pricing div {
-    line-height: 1.4;
-    font-size: 1.3rem;
-  }
-
-  #pricing {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #pricing div {
-    margin: 0 40px;
-    width: 300px;
-  }
-
-
     /*
   =================
   typography

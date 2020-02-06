@@ -188,12 +188,13 @@ larger screen devices
 =================
 */
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
 
   #nav-bar {
     padding-top: 0;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 1 0 0rem 
   }
 
   .logo {
@@ -209,6 +210,12 @@ larger screen devices
     align-items: flex-end;
     font-size: 1.4rem;
     width: 50vw;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #nav-bar ul {
+      width: 30vw;
+    }
   }
 
   #nav-bar ul li {

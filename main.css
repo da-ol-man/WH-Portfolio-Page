@@ -42,6 +42,7 @@ body {
   
 #welcome-section,
 #contact {
+  background-color: var(--med-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,9 +50,10 @@ body {
   text-align: center;
   width: 100%;
   height: 100vh;
-  /*
+    /*
   scroll-snap-align: center;
   */
+  
 }
 
  /*
@@ -81,7 +83,6 @@ body {
 
   small {
     color: var(--red-color);
-    font-weight: bolder;
   }
 
   .description {
@@ -148,28 +149,56 @@ body {
 
 .synergy {
   color: var(--red-color);
-  font-weight: 300;
+  font-weight: 400;
 }
 .synergy:hover {
   border-bottom: .0625rem solid var(--navy-color);
-  font-weight: 500;
+  font-weight: 700;
+  transition: ease .2s;
   
 }
 
 /* ==== Projects ==== */
- 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 3rem;
-} 
 
-.MD img {
-  width: 50%;
-  height: auto;
+#projects {
+  background-color: var(--max-grey);
+  text-align: center;
+  padding: 6rem 0;
 }
 
+.projects-header {
+ text-align: center;
+}
+ 
+.projects-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+} 
 
+.project-tile {
+  border: 1px solid var(--navy-color);
+  border-radius: 3px;
+  padding: .3rem;
+  text-align: center;
+}
+
+.pt-img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.info > a {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--red-color);
+}
+
+.info > a:hover {
+  font-weight: 300;
+}
 
 
 
@@ -212,9 +241,17 @@ larger screen devices
     width: 50vw;
   }
 
+  #projects {
+    padding: 10rem 0;
+  }
+
   @media only screen and (min-width: 1200px) {
     #nav-bar ul {
       width: 30vw;
+    }
+
+    #projects {
+      padding: 14rem 0;
     }
   }
 

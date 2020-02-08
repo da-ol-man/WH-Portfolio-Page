@@ -221,14 +221,22 @@ body {
 
 .contact {
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 .contact-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 2rem;
-  line-height: 3;
+}
+
+.contact-item {
+  padding: 1rem 1rem;
+}
+
+.contact-item a {
+  color: var(--navy-color);
+  font-size: 1.2rem;
 }
 
 

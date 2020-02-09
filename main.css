@@ -216,39 +216,28 @@ body {
 /* ==== Contacts section ==== */
 
 .contact-header {
+  padding: 1rem 0;
+}
+
+.contact-header-span {
   color: var(--red-color);
 }
 
-.contact {
-  width: 100%;
-  margin-top: 1.5rem;
-}
-
-.contact-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .contact-item {
-  padding: 1rem 1rem;
+  padding: 1rem 0 .5rem 0;
 }
 
-.contact-item a {
+.social-email {
   color: var(--navy-color);
   font-size: 1.2rem;
+  vertical-align: .4rem;
 }
 
-
-
-
-
-/* ==== Typography ==== */
-
-
-/*===== contact =====*/
-
-
+.social-tel {
+  color: var(--navy-color);
+  font-size: 1.2rem;
+  vertical-align: .25rem;
+}
 
 /*  
 =================
@@ -290,7 +279,7 @@ larger screen devices
     }
 
     #projects {
-      padding: 14rem 0;
+      padding: 12rem 0;
     }
   }
 

@@ -256,6 +256,13 @@ svg[data-icon="fa-free-code-camp"] {
   width: auto;
 }
 
+svg[data-icon="fa-brands:github"]:hover,
+svg[data-icon="brandico:linkedin-rect"]:hover,
+svg[data-icon="fa-free-code-camp"]:hover,
+.social-email:hover {
+  color: var(--red-color);
+}
+
 
 /*  
 =================

@@ -234,13 +234,27 @@ body {
 .social-email {
   color: var(--navy-color);
   font-size: 1.2rem;
-  vertical-align: .4rem;
+  vertical-align: .6rem;
+  padding-left: .6rem;
 }
 
 .social-tel {
   color: var(--navy-color);
   font-size: 1.2rem;
-  vertical-align: .25rem;
+  vertical-align: .8rem;
+  padding-left: .4rem;
+}
+
+svg[data-icon="el:phone-alt"] {
+  color: var(--navy-color);
+  height: 2.5rem;
+  width: auto;
+}
+
+svg[data-icon="whh:emailalt"] {
+  color: var(--navy-color);
+  height: 1.7rem;
+  width: auto;
 }
 
 svg[data-icon="fa-brands:github"],
@@ -259,6 +273,7 @@ svg[data-icon="fa-free-code-camp"] {
 svg[data-icon="fa-brands:github"]:hover,
 svg[data-icon="brandico:linkedin-rect"]:hover,
 svg[data-icon="fa-free-code-camp"]:hover,
+svg[data-icon="whh:emailalt"]:hover, 
 .social-email:hover {
   color: var(--red-color);
 }

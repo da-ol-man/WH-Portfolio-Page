@@ -104,7 +104,8 @@ body {
   padding: .3rem 1rem 0 0;
 }
 
-.logo {
+.logo a{
+  display: block;
   color: var(--navy-color);
   border-top: .625rem solid var(--red-color);
   border-bottom: .125rem solid var(--navy-color);
@@ -294,7 +295,7 @@ larger screen devices
     padding: 0 1 0 0rem 
   }
 
-  .logo {
+  .logo a {
     font-size: 5rem;
     font-weight: 200;
     /*text-shadow: 1px 1px var(--red-color);*/
